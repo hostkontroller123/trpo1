@@ -1,7 +1,12 @@
  <?php
 include "C.php";
 include "MyLog.php";
-
+use ivanenko\A;
+use ivanenko\B;
+use ivanenko\C;
+use ivanenko\MyLog;
+use ivanenko\NoRootException;
+use ivanenko\ZeroDivisionException;
 
 $a1 = new A();
 $b2 = new B($a1);
@@ -42,4 +47,3 @@ if(isset($_GET['sub']))
 MyLog::log('<form action="#" method="get"><input type="text" name="a" /> x^2 + <input type="text" name="b" /> x + <input type="text" name="c" /> = 0<input type="submit" name="sub" value = "ввод"/></form></body></html>');
 MyLog::write();
 ?>
- 
